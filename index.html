@@ -1,58 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
-  <link rel="stylesheet" href="style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
- 
-</head>
-<body>
-  <div class="main">
-    <div class="navbar">
-      <h2 class="sneakernav">
-        sneakers
-      </h2>
-      <p>Collections</p>
-      <p>Men</p>
-      <p>Women</p>
-      <p>About</p>
-      <p>Contacts</p>
-      <div class="addprofile">
-        <img src="./images/icon-cart.svg" alt="cart" class="cart">
-        <img src="./images/image-avatar.png" alt="" class="person">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,200;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <h2 class="sneakernav">sneakers</h2>
+        <div class="menus">
+          <p>Collections</p>
+          <p>Men</p>
+          <p>Women</p>
+          <p>About</p>
+          <p>Contacts</p>
+        </div>
+
+        <div class="addprofile">
+          <img src="./images/icon-cart.svg" alt="cart" class="cart" />
+          <img src="./images/image-avatar.png" alt="" class="person" />
+        </div>
       </div>
-    </div>
       <!-- content -->
-    <div class="content">
-      <div class="images">
-        <div class="largeimg">
-          <img src="./images/image-product-1-thumbnail.jpg" alt="">       
-        </div>
-        <div class="smallimg">
-          <img src="./images/image-product-1-thumbnail.jpg" alt="">
-          <img src="./images/image-product-2-thumbnail.jpg" alt="">
-          <img src="./images/image-product-3-thumbnail.jpg" alt="">
-          <img src="./images/image-product-4-thumbnail.jpg" alt="">
-        </div>
-      </div>
-      <div class="description">
-        <p>sneaker company</p>
-        <h1>Fall Limited Edition <br>Sneakers</h1>
-        <p>These low profile sneakers are your perfect casual wear <br>companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer<br> <br></p>
-        <div class="price">
-          <p>$ 125.00</p>
-          <p>50%</p>
-        </div>
-      </div>
-    
-    </div>
+      <div class="content">
+        <div class="images">
+          <div class="largeimgcard">
+            <img src="./images/image-product-1.jpg" alt="" />
+          </div>
 
-  </div>
-  
-</body>
+          <div class="smallimg">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+            <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+            <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+            <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+          </div>
+        </div>
+        <div class="description">
+          <p class="topheader">SNEAKER COMPANY</p>
+          <p class="header">Fall Limited Edition <br />Sneakers</p>
+          <p class="context">
+            These low profile sneakers are your perfect casual wear
+            <br />companion. Featuring a durable rubber outer sole, they'll
+            withstand everything the weather can offer<br />
+            <br />
+          </p>
+          <div class="price">
+            <p class="bolded">$125.00</p>
+            <p class="orange">50%</p>
+          </div>
+          <p class="blurryprice">$250.00</p>
+
+          <div class="additions">
+            <div class="firstcolumn">
+              <div>
+                <img src="./images/icon-minus.svg" alt="" />
+              </div>
+
+              <p>0</p>
+              <div>
+                <img
+                  src="./images/icon-plus.svg"
+                  alt=""
+                  style="font-size: 10px"
+                />
+              </div>
+            </div>
+
+            <button class="Add">
+              <img src="./images/icon-cart.svg" alt="" style="stroke: white" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

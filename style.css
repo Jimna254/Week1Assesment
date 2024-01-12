@@ -1,6 +1,7 @@
 * {
   margin: 0%;
   padding: 0%;
+  font-family: Kumbh Sans;
 }
 body {
   background-color: rgb(250, 234, 210);
@@ -8,10 +9,12 @@ body {
   justify-content: center;
 }
 .main {
-  width: 80vw;
+  width: auto;
   height: 80vh;
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  margin: 10px 60px 60px;
 }
 .navbar {
   display: flex;
@@ -20,51 +23,139 @@ body {
   width: 80vw;
   height: 10vh;
   justify-content: space-between;
+  margin: 10px;
+  border-bottom: solid;
+  border-color: rgb(161, 161, 161);
+}
+
+.menus {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 0px;
+}
+
+.menus > p {
+  margin-left: 20px;
+}
+
+.menus > p:hover {
+  color: hsl(26, 100%, 55%);
 }
 
 .addprofile {
-  width: 20px;
-  height: 20px;
+  height: 30px;
   display: flex;
   gap: 20px;
   flex-direction: row;
   justify-content: flex-end;
-}
-.smallimg {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-}
-.content {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  border-radius: 15px;
-  justify-content: space-around;
-}
-.largeimg {
-  width: 120vh;
-  height: auto;
+  margin-bottom: 8px;
 }
 
-.smallimg > img {
-  width: 100px;
-}
-.description {
-  background-color: greenyellow;
-  width: 60px;
-}
-.content > div {
-  width: 100vh;
-  border-radius: 15px;
-}
-.images > div {
-  width: 70px;
-  border-radius: 10px;
-}
-.price {
+.content {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 20px;
+  border-radius: 15px;
+  gap: 50px;
+  padding: 50px;
+}
+.images {
+  border-radius: 20px;
+}
+
+.largeimgcard {
+  border-radius: 20px;
+
+  margin-bottom: 20px;
+}
+.largeimgcard > img {
+  max-width: 80%;
+  border-radius: 15px;
+}
+
+.smallimg {
+  /* width: auto; */
+  display: flex;
+}
+
+.smallimg > img {
+  /* max-width: auto; */
+  height: 18vh;
+  width: auto;
+  border-radius: 5px;
+  gap: 20px;
+  margin: 5px;
+}
+
+.description {
+  margin-top: 50px;
+}
+
+.topheader {
+  font-weight: 700;
+  color: hsl(26, 100%, 55%);
+  margin-bottom: 20px;
+}
+
+.description > .header {
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.description > .context {
+  margin-bottom: 20px;
+  color: rgb(161, 161, 161);
+}
+.price {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.price > .bolded {
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.price > .orange {
+  font-weight: bolder;
+  margin-top: 5px;
+  color: hsl(26, 100%, 55%);
+}
+
+.blurryprice {
+  font-weight: bolder;
+  color: rgb(161, 161, 161);
+}
+
+.additions {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+.firstcolumn {
+  display: flex;
+
+  margin-top: 8px;
+  gap: 30px;
+}
+
+.Add {
+  padding: 8px 80px 8px 80px;
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.Add:hover {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.7;
+}
+.smallimg > img:hover {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.2;
 }
